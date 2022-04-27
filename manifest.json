@@ -1,0 +1,23 @@
+{
+  "background_color": "#ffffff",
+  "description": "효성병원 직원전용, 인트라넷 전용",
+  "dir": "ltr",
+  "display": "standlone",
+  "name": "효성병원 인트라넷",
+  "orientation": "portrait",
+  "scope": "/",
+  "short_name": "효성병원",
+  "start_url": "https://howardlee79.github.io/hyosung/default.html",
+  "theme_color": "#3777BC",
+  "icons": [
+    {
+      "src": "images/favicon.ico",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "images/180x180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    }
+  ]
+}
