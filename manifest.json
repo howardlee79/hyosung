@@ -18,6 +18,11 @@
       "src": "images/180x180.png",
       "type": "image/png",
       "sizes": "180x180"
+    },
+    {
+      "src": "images/512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ]
 }
