@@ -1,11 +1,11 @@
 self.addEventListener('install', (e) => {
   e.waitUntil(
     caches.open('fox-store').then((cache) => cache.addAll([
-      '/pwa/hyosung/default.html',
-      '/pwa/hyosung/index.js',
-      '/pwa/hyosung/css/bootstrap.css',
-      '/pwa/hyosung/css/font-awesome.css',
-      '/pwa/hyosung/css/theme.css',
+      '/hyosung/default.html',
+      '/hyosung/index.js',
+      '/hyosung/css/bootstrap.css',
+      '/hyosung/css/font-awesome.css',
+      '/hyosung/css/theme.css',
     ])),
   );
 });
