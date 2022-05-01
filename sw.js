@@ -10,9 +10,25 @@ self.addEventListener('install', (e) => {
   );
 });
 
-self.addEventListener('fetch', (e) => {
-  console.log(e.request.url);
-  e.respondWith(
-    caches.match(e.request).then((response) => response || fetch(e.request)),
-  );
-});
+self.onfetch = function (event) {
+  var req = event.request;
+  return event.respondWith(function cacheFirst() {
+    // Open your cache.
+    return self.caches.open('v1').then(function (cache) {
+      // Check if the request is in there.
+      return cache.match(req).then(function (res) {
+        // If not match, there is no rejection but an undefined response.
+        if (!res) {
+          // Go to network.
+          return fetch(req.clone()).then(function (res) {
+            // Put in cache and return the network response.
+            return cache.put(req, res.clone()).then(function () {
+              return res;
+            });
+          });
+        }
+        return res;
+      });
+    });
+  });
+}
