@@ -1,7 +1,7 @@
 {
   "background_color": "#ffffff",
   "description": "효성병원 직원전용, 인트라넷 전용",
-  "display": "standlone",
+  "display": "standalone",
   "name": "효성병원 인트라넷",
   "orientation": "portrait",
   "short_name": "효성병원",
