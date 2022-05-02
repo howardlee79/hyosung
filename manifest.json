@@ -1,35 +1,33 @@
 {
-  "name": "Hello World",
-  "short_name": "Hello",
-  "icons": [{
-      "src": "images/hello-icon-144.png",
-      "sizes": "144x144",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }, {
-      "src": "images/hello-icon-152.png",
-      "sizes": "152x152",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }, {
-      "src": "images/hello-icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }, {
-      "src": "images/hello-icon-256.png",
-      "sizes": "256x256",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }, {
-      "src": "images/hello-icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }],
-  "lang": "en-US",
-  "start_url": "https://howardlee79.github.io/hyosung/index.html",
+  "background_color": "#ffffff",
+  "description": "효성병원 직원전용, 인트라넷 전용",
   "display": "standalone",
-  "background_color": "white",
-  "theme_color": "white"
+  "name": "효성병원 인트라넷",
+  "orientation": "portrait",
+  "short_name": "효성병원",
+  "start_url": "https://howardlee79.github.io/hyosung/index.html",
+  "theme_color": "#3777BC",
+  "icons": [
+    {
+      "src": "images/144x144.png",
+      "type": "image/png",
+      "sizes": "180x180",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/180x180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "images/512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "images/favicon.ico",
+      "type": "image/x-icon",
+      "purpose": "any maskable"
+    }
+  ]
 }
