@@ -8,9 +8,11 @@
 		<meta name="keywords" content="효성병원 인트라넷 입니다." />
 		<meta name="description" content="직원전용, 인트라넷 전용">
 		<meta name="author" content="www.internetcompany.co.kr">
+		<meta name="theme-color" content="#3777BC"/>
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="manifest" href="manifest.json" />
 		
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
@@ -20,7 +22,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
 
 		<!-- Vendor CSS -->
-		<link rel="stylesheet" href="css/bootstrap.css" />
+		<!---link rel="stylesheet" href="css/bootstrap.css" /--->
 
 		<link rel="stylesheet" href="css/font-awesome.css" />
 		
@@ -52,6 +54,12 @@
 			}
 			
 		</style>
+		<!---script src="index1.js" defer></script>
+		<script type="module">
+   		import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+   		const el = document.createElement('pwa-update');
+   		document.body.appendChild(el);
+		</script--->
 	</head>
 
 <SCRIPT LANGUAGE="JavaScript">
@@ -141,6 +149,6 @@
 			</div>
 		</section>
 		<!-- end: page -->
-
+	<script src="js/main.js"></script>
 	</body>
 </html>
